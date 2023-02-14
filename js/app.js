@@ -8,8 +8,7 @@ let storeSection = document.getElementById('store-profiles');
 
 console.dir(storeSection);
 
-
-// ********** HELPER FUNCTIONS/UTILITES *********
+// ********** HELPER FUNCTIONS *********
 
 // function randomCustomerCalc(min,max){ // random number of customers per hour
 //   // got this from MDN docs
@@ -27,7 +26,6 @@ let seattle = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // calculation
     // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
@@ -45,21 +43,18 @@ let seattle = {
       console.log(this.cookiesBought);
       this.dailyTotal += totalCookie;
     }
-    console.log(this.dailyTotal, `this is the total`)
-
+    console.log(this.dailyTotal, 'total');
   },
 
   render: function(){
-
     this.calcTotalCookiePerHour();
 
+    // ***** DOM MANIPULATION *****
 
-// ***** DOM MANIPULATION *****
-
-    //step 2 create element
+    // create element
     let articleElem = document.createElement('article');
 
-    //step 3 add it to the dom
+    // add it to the dom
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -67,8 +62,7 @@ let seattle = {
     console.log(h2Elem);
     articleElem.appendChild(h2Elem);
 
-
-    // ! USEFUL FOR LAB
+    // USEFUL FOR LAB
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
 
@@ -89,8 +83,6 @@ let seattle = {
     articleElem.appendChild(pElem);
   }
 };
-
-
 
 let tokyo = {
   name: 'Tokyo',
@@ -101,7 +93,6 @@ let tokyo = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // calculation
     // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
@@ -119,21 +110,18 @@ let tokyo = {
       console.log(this.cookiesBought);
       this.dailyTotal += totalCookie;
     }
-    console.log(this.dailyTotal, `this is the total`)
-
+    console.log(this.dailyTotal, 'total');
   },
 
   render: function(){
-
     this.calcTotalCookiePerHour();
 
+    // ***** DOM MANIPULATION *****
 
-// ***** DOM MANIPULATION *****
-
-    //step 2 create element
+    // create element
     let articleElem = document.createElement('article');
 
-    //step 3 add it to the dom
+    // add it to the dom
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -141,8 +129,7 @@ let tokyo = {
     console.log(h2Elem);
     articleElem.appendChild(h2Elem);
 
-
-    // ! USEFUL FOR LAB
+    // USEFUL FOR LAB
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
 
@@ -163,9 +150,6 @@ let tokyo = {
     articleElem.appendChild(pElem);
   }
 };
-
-
-
 
 let dubai = {
   name: 'Dubai',
@@ -176,7 +160,6 @@ let dubai = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // calculation
     // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
@@ -194,21 +177,18 @@ let dubai = {
       console.log(this.cookiesBought);
       this.dailyTotal += totalCookie;
     }
-    console.log(this.dailyTotal, `this is the total`)
-
+    console.log(this.dailyTotal, 'total');
   },
 
   render: function(){
-
     this.calcTotalCookiePerHour();
 
+    // ***** DOM MANIPULATION *****
 
-// ***** DOM MANIPULATION *****
-
-    //step 2 create element
+    // create element
     let articleElem = document.createElement('article');
 
-    //step 3 add it to the dom
+    // add it to the dom
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -216,8 +196,7 @@ let dubai = {
     console.log(h2Elem);
     articleElem.appendChild(h2Elem);
 
-
-    // ! USEFUL FOR LAB
+    // USEFUL FOR LAB
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
 
@@ -238,10 +217,6 @@ let dubai = {
     articleElem.appendChild(pElem);
   }
 };
-
-
-
-
 
 let paris = {
   name: 'Paris',
@@ -252,7 +227,6 @@ let paris = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // calculation
     // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
@@ -270,21 +244,18 @@ let paris = {
       console.log(this.cookiesBought);
       this.dailyTotal += totalCookie;
     }
-    console.log(this.dailyTotal, `this is the total`)
-
+    console.log(this.dailyTotal, 'total');
   },
 
   render: function(){
-
     this.calcTotalCookiePerHour();
 
+    // ***** DOM MANIPULATION *****
 
-// ***** DOM MANIPULATION *****
-
-    //step 2 create element
+    // create element
     let articleElem = document.createElement('article');
 
-    //step 3 add it to the dom
+    // add it to the dom
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -292,8 +263,7 @@ let paris = {
     console.log(h2Elem);
     articleElem.appendChild(h2Elem);
 
-
-    // ! USEFUL FOR LAB
+    // USEFUL FOR LAB
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
 
@@ -314,12 +284,6 @@ let paris = {
     articleElem.appendChild(pElem);
   }
 };
-
-
-
-
-
-
 
 let lima = {
   name: 'Lima',
@@ -330,7 +294,6 @@ let lima = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // calculation
     // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
@@ -348,21 +311,18 @@ let lima = {
       console.log(this.cookiesBought);
       this.dailyTotal += totalCookie;
     }
-    console.log(this.dailyTotal, `this is the total`)
-
+    console.log(this.dailyTotal, 'total');
   },
 
   render: function(){
-
     this.calcTotalCookiePerHour();
 
+    // ***** DOM MANIPULATION *****
 
-// ***** DOM MANIPULATION *****
-
-    //step 2 create element
+    // create element
     let articleElem = document.createElement('article');
 
-    //step 3 add it to the dom
+    // add it to the dom
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -370,8 +330,7 @@ let lima = {
     console.log(h2Elem);
     articleElem.appendChild(h2Elem);
 
-
-    // ! USEFUL FOR LAB
+    // USEFUL FOR LAB
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
 
@@ -392,8 +351,6 @@ let lima = {
     articleElem.appendChild(pElem);
   }
 };
-
-
 
 // ********** EXECUTABLE CODE **********
 
@@ -416,4 +373,3 @@ console.log(paris);
 lima.calcTotalCookiePerHour();
 lima.render();
 console.log(lima);
-
