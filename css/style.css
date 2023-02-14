@@ -12,7 +12,7 @@ h1 {
   }
   
   h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     background-color: inherit;
     font-size: 3em;
     text-align: center;
@@ -21,7 +21,7 @@ h1 {
   }
   
   main>h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     font-size: 1.75em;
     width: max-content;
     padding: 30px;
@@ -45,7 +45,7 @@ h1 {
   }
   
   article h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     font-size: 1.75em;
     padding-bottom: 10px;
     text-decoration: underline;
@@ -53,20 +53,20 @@ h1 {
   
   p {
     font-size: 1.25em;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     margin-bottom: 15px;
   }
   
   ul {
     font-size: 1.75em;
-    font-family: 'Archivo', sans-serif;
+    font-family: sans-serif;
     list-style-type: disc;
     list-style-position: inside;
     margin-bottom: 15px;
   }
   
   li {
-    font-family: 'Archivo', sans-serif;
+    font-family: sans-serif;
     font-size: .75em;
     margin-top: 15px;
   
@@ -77,7 +77,7 @@ h1 {
   }
   
   table * {
-    font-family: 'Archivo', sans-serif;
+    font-family: sans-serif;
     background-color: grey;
     border: 1px double black;
     padding: 8px;
@@ -93,7 +93,7 @@ h1 {
   
   
   footer {
-    font-family: 'Archivo', sans-serif;
+    font-family: sans-serif;
     font-size: 1.5em;
     padding-top: 15px;
     text-align: right;
