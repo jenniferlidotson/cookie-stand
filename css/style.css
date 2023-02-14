@@ -1,15 +1,13 @@
 h1 {
     font-size: 3vwborder: 2px solid black
   }
-  
-  -------------------
-  
+    
   body {
-    background-color: #b4bec8;
+    background-color: whitesmoke;
   }
   
   header {
-    background-color: #797d80;
+    background-color: grey;
     height: 100px;
   }
   
@@ -40,8 +38,8 @@ h1 {
   }
   
   article {
-    border: 5px double #020005;
-    background-color: #75abe9;
+    border: 5px double black;
+    background-color: skyblue;
     padding: 30px;
     margin-top: 30px;
   }
@@ -80,8 +78,8 @@ h1 {
   
   table * {
     font-family: 'Archivo', sans-serif;
-    background-color: #797d80;
-    border: 1px double #020005;
+    background-color: grey;
+    border: 1px double black;
     padding: 8px;
   }
   
@@ -101,6 +99,6 @@ h1 {
     text-align: right;
     padding-right: 10px;
     height: 100px;
-    background-color: #797d80;
+    background-color: grey;
     margin-top: 30px;
   }
