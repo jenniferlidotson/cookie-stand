@@ -10,10 +10,10 @@ console.dir(storeSection);
 
 // ********** HELPER FUNCTIONS *********
 
-// function randomCustomerCalc(min,max){ // random number of customers per hour
+function randomCustomerCalc(min,max){ // random number of customers per hour
 //   // got this from MDN docs
-//   return Math.floor(Math.random() * (max - min + 1) + min);
-// }
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 // ********** OBJECT LITERALS **********
 
@@ -26,7 +26,7 @@ let seattle = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
+    this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
       this.randomCustomer.push(customer);
@@ -36,7 +36,7 @@ let seattle = {
 
   calcTotalCookiePerHour: function(){
     this.getCookies(this.minCust, this.maxCust);
-    // randomCustomerCalc();
+    randomCustomerCalc();
     for(let i = 0; i < hours.length; i++){
       let totalCookie = Math.round(this.randomCustomer[i] * this.avgCookieBought);
       this.cookiesBought.push(totalCookie);
@@ -93,7 +93,7 @@ let tokyo = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
+    this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
       this.randomCustomer.push(customer);
@@ -103,7 +103,7 @@ let tokyo = {
 
   calcTotalCookiePerHour: function(){
     this.getCookies(this.minCust, this.maxCust);
-    // randomCustomerCalc();
+    randomCustomerCalc();
     for(let i = 0; i < hours.length; i++){
       let totalCookie = Math.round(this.randomCustomer[i] * this.avgCookieBought);
       this.cookiesBought.push(totalCookie);
@@ -160,7 +160,7 @@ let dubai = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
+    this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
       this.randomCustomer.push(customer);
@@ -170,7 +170,7 @@ let dubai = {
 
   calcTotalCookiePerHour: function(){
     this.getCookies(this.minCust, this.maxCust);
-    // randomCustomerCalc();
+    randomCustomerCalc();
     for(let i = 0; i < hours.length; i++){
       let totalCookie = Math.round(this.randomCustomer[i] * this.avgCookieBought);
       this.cookiesBought.push(totalCookie);
@@ -227,7 +227,7 @@ let paris = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
+    this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
       this.randomCustomer.push(customer);
@@ -237,7 +237,7 @@ let paris = {
 
   calcTotalCookiePerHour: function(){
     this.getCookies(this.minCust, this.maxCust);
-    // randomCustomerCalc();
+    randomCustomerCalc();
     for(let i = 0; i < hours.length; i++){
       let totalCookie = Math.round(this.randomCustomer[i] * this.avgCookieBought);
       this.cookiesBought.push(totalCookie);
@@ -294,7 +294,7 @@ let lima = {
   randomCustomer: [],
   dailyTotal: 0,
   getCookies: function(min,max){
-    // this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
+    this.cookieNum = `${randomCustomerCalc(23-65)} cookies`;
     for(let i = 0; i < hours.length; i++){
       let customer = Math.floor(Math.random() * (max - min + 1) + min);
       this.randomCustomer.push(customer);
