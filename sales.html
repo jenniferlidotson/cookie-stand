@@ -16,16 +16,30 @@
 
   <main>
 
-    <h2>Business Information: Here are our locations and hours. To contact us, please send an email to <a href = "mailto: pat@salmoncookies.com">pat@salmoncookies.com</a></h2>
+    <h2>Would you like to add a new store location? Fill out our form or send an email to <a href = "mailto: pat@salmoncookies.com">pat@salmoncookies.com</a></h2>    
     <center><h3><a href="index.html">Click here to return to our main page</a></h3></center>
 
-    <section id="store-profiles"></section>
-
-
+<p>
+<form id="addRestForm">
+    <fieldset>
+      <label>Proposed City Location
+          <input name="city" type="text"/>
+      </label>
+      <label>Minimum Hourly Customers
+        <input name="minCust" type="number" min="0" step="1"/>
+    </label>
+    <label>Maximum Hourly Customers
+      <input name="maxCust" type="number" min="0" step="1"/>
+    </label>
+    <label>Average Cookie Per Customer
+      <input name="aveCookie" type="number" min="0" step=".1"/>
+    </label>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+  <table id="restaurantProfiles">
 
   </main>
-  <footer>Created by Jennifer Li Dotson</footer>
-  <script src="js/app.js"></script>
+  <script src="js/app2.js"></script>
 </body>
-
 </html>

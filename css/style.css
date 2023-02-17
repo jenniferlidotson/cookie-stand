@@ -1,13 +1,14 @@
 h1 {
-    font-size: 3vwborder: 2px solid black
+    font-size: 3vwborder: 2px solid black;
   }
     
   body {
-    background-color: whitesmoke;
+    background-color: bisque;
   }
   
   header {
     background-color: grey;
+    color: white;
     height: 100px;
   }
   
@@ -30,10 +31,9 @@ h1 {
   }
   
   section {
-    width: 75%;
+    width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   
@@ -69,7 +69,6 @@ h1 {
     font-family: sans-serif;
     font-size: .75em;
     margin-top: 15px;
-  
   }
   
   img {
@@ -78,9 +77,10 @@ h1 {
   
   table * {
     font-family: sans-serif;
-    background-color: grey;
+    background-color: skyblue;
     border: 1px double black;
     padding: 8px;
+    font-size: 1.25em;
   }
   
   th {
@@ -91,6 +91,60 @@ h1 {
     text-align: center;
   }
   
+  form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  fieldset {
+    width: 360px;
+    border: 10px solid darkgray;
+    border-radius: 8px;
+    padding:40px;
+    text-align: left;
+    background: lightgray;
+  }
+  
+  input {
+    font-size: 20pt;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
+  }
+  
+  input:focus, input:hover {
+    background: salmon;
+  }
+  
+  label {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15pt;
+  }
+  
+  button {
+    background-color: darkgreen;
+    border: 6px solid burlywood;
+    border-radius: 8px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    font-size: 18pt;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  button:focus, button:hover {
+    background: salmon;
+  }
   
   footer {
     font-family: sans-serif;
@@ -100,5 +154,6 @@ h1 {
     padding-right: 10px;
     height: 100px;
     background-color: grey;
+    color: white;
     margin-top: 30px;
   }
